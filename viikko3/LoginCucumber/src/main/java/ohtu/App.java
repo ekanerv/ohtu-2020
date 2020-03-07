@@ -7,6 +7,7 @@ import ohtu.io.IO;
 import ohtu.services.AuthenticationService;
 import java.util.Arrays;
 
+
 public class App {
 
     private IO io;

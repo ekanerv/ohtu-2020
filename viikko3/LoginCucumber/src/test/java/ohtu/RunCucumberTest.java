@@ -9,7 +9,8 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
     plugin = "pretty", 
     features = "src/test/resources/ohtu", 
-    snippets = SnippetType.CAMELCASE 
+    snippets = SnippetType.CAMELCASE,
+    tags = { "@problem" }
 )
 
 public class RunCucumberTest {}
