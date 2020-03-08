@@ -106,6 +106,24 @@ public class Stepdefs {
         pageHasContent("Create username and give password");
     }
 
+    // User can login with successfully generated account
+    @Given("user with username {string} with password {string} is successfully created")
+    public void userWithUsernameWithPasswordIsSuccessfullyCreated(String username, String password) {
+        driver.get(baseUrl);
+        WebElement element = driver.findElement(By.linkText("register new user"));
+        element.click();
+        createNewUser(username, password, password);
+    }
+    
+    // User can not login with account that is not successfully created
+    @Given("user with username {string} and password {string} is tried to be created")
+    public void userWithUsernameAndPasswordIsTriedToBeCreated(String username, String password) {
+        driver.get(baseUrl);
+        WebElement element = driver.findElement(By.linkText("register new user"));
+        element.click();
+        createNewUser(username, password, password);
+    }
+
 
 
     @After
