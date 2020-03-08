@@ -38,21 +38,16 @@ public class Stepdefs {
         logInWith(username, password);
     }    
     
+    @When("incorrect username {string} and incorrect password {string} are given")
+    public void nonExistentUsernameIsGiven(String username, String password) {
+        logInWith(username, password);
+    }
+    
     @Then("user is not logged in and error message is given")
     public void userIsNotLoggedInAndErrorMessageIsGiven() {
         pageHasContent("invalid username or password");
         pageHasContent("Give your credentials to login");
     }    
-    
-    @When("username {string} and password {string} are given")
-    public void usernameAndPasswordAreGiven(String username, String password) throws Throwable {
-        logInWith(username, password);
-    }   
-    
-    @Then("system will respond {string}")
-    public void systemWillRespond(String pageContent) throws Throwable {
-        assertTrue(driver.getPageSource().contains(pageContent));
-    }
     
     @After
     public void tearDown(){
