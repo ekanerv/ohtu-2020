@@ -3,6 +3,7 @@ package ohtu.authentication;
 import ohtu.data_access.UserDao;
 import ohtu.domain.User;
 import ohtu.util.CreationStatus;
+import java.lang.Character;
 
 public class AuthenticationService {
 
@@ -32,6 +33,22 @@ public class AuthenticationService {
 
         if (username.length()<3 ) {
             status.addError("username should have at least 3 characters");
+        }
+        
+        if (password.length()<8) {
+            status.addError("password should have at least 8 characters");
+        }
+        
+        boolean passwordNotOnlyLetters = false;
+        for (int i = 0; i < password.length(); i++) {
+            if (!Character.isLetter(password.charAt(i)))
+                passwordNotOnlyLetters = true;
+        }
+        if (!passwordNotOnlyLetters) {
+            status.addError("password should not contain only letters");
+        }
+        if (!password.equals(passwordConfirmation)) {
+            status.addError("password and password confirmation do not match");
         }
 
         if (status.isOk()) {
