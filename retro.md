@@ -1,0 +1,5 @@
+## Tiivistelmä retrospektiivitekniikoista
+
+Start, Stop, Continue, More of, Less of Wheel -retrospektiivitekniikka tarkoittaa tekniikkaa, jonka avulla retrospektiivissä selvitetään, minkä asioiden parissa vielä jatketaan ja minkä ei. Tämä on ajallisesti lyhytkestoinen, noin 10-25 minuuttia. Paperille piirretty ympyrä (”rengas”) jaetaan viiteen osaan, jotka nimetään tekniikan nimen mukaisesti. Jokaiseen osioon mietitään osion nimen mukaisesti mitä aletaan tehdä, minkä tekeminen lopetetaan, mitä tulisi jatkaa, mitä tehdä enemmän ja mitä vähemmän.
+
+Glad, Sad, Mad -tekniikka taasen on pidempikestoisempi (noin tunti). Siinä osallistujat kirjoittavat sprintin aikana havaitsemiaan ongelmia, muutoksia ja havaintoja korteille, jotka sijoitetaan esimerkiksi valkotaululle halutun kategorian (glad, sad tai mad) alle. Tämän jälkeen osallistujat äänestävät siitä, mistä aiheista keskustellaan. Keskusteltavien aiheiden järjestys määräytyy kunkin aiheen saaman äänimäärän perusteella. Keskustelua jatketaan kunnes kaikki aiheet on käsitelty tai aika loppuu kesken.
